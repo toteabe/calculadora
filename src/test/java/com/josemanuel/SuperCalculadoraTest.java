@@ -37,13 +37,13 @@ public class SuperCalculadoraTest {
     }
 
     @Test
-    @DisplayName("Test entrada a Menú de Aritmética, opción A")
+    @DisplayName("Test entrada a Menú de Aritmética, opción _A_")
     public void testCasoMenuAritmetica() {
        
         provideInput("A\n1\n10\n33\nX\nX");
         
         SuperCalculadora.main(new String[0]);
-        assertThat(getOutput(), containsString("Resultado: 43") );
+        assertThat(getOutput(), containsString("ResYYultado: 43") );
         
     }
 
