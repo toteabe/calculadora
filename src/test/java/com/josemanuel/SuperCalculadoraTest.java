@@ -43,7 +43,7 @@ public class SuperCalculadoraTest {
         provideInput("A\n1\n10\n33\nX\nX");
         
         SuperCalculadora.main(new String[0]);
-        assertThat(getOutput(), containsString("Resultado: 43") );
+        assertThat(getOutput(), containsString("Resultado: 43 ") );
         
     }
 
