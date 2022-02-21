@@ -12,7 +12,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
-
+/**
+ * Ejemplos de uso de hamcrest con junit5
+ * https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-writing-assertions-with-hamcrest/
+ */
 public class SuperCalculadoraTest {
     
     private final InputStream systemIn = System.in;
@@ -37,7 +40,7 @@ public class SuperCalculadoraTest {
     }
 
     @Test
-    @DisplayName("Test entrada a Menú de Aritmética, opción A")
+    @DisplayName("Test entrada a Menú de Aritmética, opción _____A_____")
     public void testCasoMenuAritmetica() {
        
         provideInput("A\n1\n10\n33\nX\nX");
